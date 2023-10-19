@@ -33,6 +33,7 @@ background-position: center;
     backface-visibility: hidden;
     margin-left: -35px;
     transform: rotate(0deg);
+    z-index: 111;
   }
   .swatch div:before {
     width: 16px;

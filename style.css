@@ -26,29 +26,29 @@ gap: 10px;
     box-sizing: border-box;
     display: inline-block;
     backface-visibility: hidden;
-    transform: rotate(30deg);
+    transform: rotate(15deg);
     color: white;
     font-size: 20px;
   }
   .swatch div:hover{
-    animation: swatch 2s linear;
+    animation: swatch .5s linear;
     cursor: pointer;
   }
   @keyframes swatch{
     0%{
-      transform: rotate(30deg);
+      transform: rotate(15deg);
     }
     25%{
-      transform: rotate(45deg);
+      transform: rotate(180deg);
     }
     50%{
-      transform: rotate(65deg);
+      transform: rotate(260deg);
     }
     75%{
-      transform: rotate(75deg);
+      transform: rotate(320deg);
     }
     100%{
-      transform: rotate(90deg);
+      transform: rotate(360deg);
     }
   }
   .swatch div:nth-child(1) {
@@ -71,6 +71,9 @@ gap: 10px;
   .swatch div:nth-child(6) {
     background-color: #F73F52;
   }
+  #a1{
+    color: #000000;
+  }
   
  @media screen and (max-width: 650px){
   
@@ -84,5 +87,10 @@ gap: 10px;
     .swatch{
       flex-direction: column;
       align-items: center;
+    }
+    .swatch div {
+      margin-top: 1rem;
+      width:200px;
+      height: 100px;
     }
 }
